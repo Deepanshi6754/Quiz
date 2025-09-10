@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container1">
+        <h1>Welcome to the Quiz!</h1>
+        <div id="question-container">
+            <h2 id="question-text"></h2>
+            <button id="option1" class="option-button"></button>
+            <button id="option2" class="option-button"></button>
+            <button id="option3" class="option-button"></button>
+            <button id="option4" class="option-button"></button>
+        </div>
+        <div id="feedback" style="display: none;">
+            <p id="answer-feedback"></p>
+            <button onclick="nextQuestion()">Next Question</button>
+        </div>
+        <div id="progress-bar-container">
+            <progress id="progress-bar" max="100" value="0"></progress>
+        </div>
+        <div id="result" style="display: none;">
+            <h2>Quiz Completed!</h2>
+            <p id="score">Your Score: </p>
+            <p id="correct-answers"></p>
+            <p id="incorrect-answers"></p>
+            <button onclick="window.location.reload()">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
